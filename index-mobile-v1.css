@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Default: iPhone X/Google Pixel 3 - Mobile*/
+body {
+	background-color: #FDE0F1;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	width: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*Navigation*/
+
+#navigation {
+	position: absolute;
+	width: 50%;
+	background-color: #FDE0F1;
+	color: #1A1A1A;
+	padding-top: 5%;
+	right: 5%;
+	border: none;
+	z-index: 10;
+	font-size: 40px;
+}
+
+.nav {
+	display: block;
+	text-align: right;
+	padding-bottom: 3%;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+     color: #F21D96; 
+     text-decoration: none; 
+     cursor: pointer;  
+}
+
+/*Copy Column*/
+
+#title { 
+	font-family: 'Roboto', serif;
+	font-size: 100px;
+	color: #8F0054;
+	text-shadow: #8F0054 0px 0px 2px, #8F0054 0px 0px 2px, #8F0054 0px 0px 2px, #8F0054 0px 0px 2px, #8F0054 0px 0px 2px, #8F0054 0px 0px 2px, #8F0054 0px 0px 2px;
+}
+
+.mobile-copy {
+	position: absolute;
+	z-index: 5;
+	height: auto;
+	width: 50%;
+	bottom: 15%;
+	left: 10%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	color: #1A1A1A;
+}
+
+#next {
+	display: inline-block;
+	padding: 3%;
+	background-color: #8F0054;
+	color: #FFFFFF;
+	z-index: 20;
+	border-radius: 10px;
+	font-size: 50px;
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+
+/*Footer*/
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 5%;
+	width: 100vw;
+	background-color: #2A2A2A;
+	color: #C9C9C9;
+	padding-top: 3%;
+	border: none;
+}
+
+footer ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.footer {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	display: inline;
+	padding-left: 3%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+}
