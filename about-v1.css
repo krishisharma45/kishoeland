@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Default: Regular Laptop (1440 x 900px)*/
+body {
+	background-color: #FFFFFF;
+	height: 100vh;
+	width: auto;
+	background: #f8cde2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*Navigation*/
+
+#navigation {
+	position: absolute;
+	width: 50%;
+	background-color: transparent;
+	color: #1A1A1A;
+	padding-top: 3%;
+	right: 6%;
+	border: none;
+	z-index: 10;
+	font-size: 16px;
+}
+
+.nav {
+	display: inline;
+	padding-right: 6%;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+     color: #F21d96; 
+     text-decoration: none; 
+     cursor: pointer;  
+}
+
+/*Copy Column + Illustration*/
+
+#title { 
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	color: #8F0054;
+	text-shadow: #8F0054 0px 0px 1px,   #8F0054 0px 0px 1px,   #8F0054 0px 0px 1px, #8F0054 0px 0px 1px;
+}
+
+.copy_column {
+	position: absolute;
+	z-index: 5;
+	height: auto;
+	width: auto;
+	color: #1A1A1A;
+	top: 20%;
+	left: 45%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	right: 25%;
+}
+
+.illustration {
+	position: absolute;
+	z-index: 10;
+	/*height: 540px;
+	width: 710px;*/
+	height: 60vh;
+	width: auto;	
+	background-color: gray;
+	display: inline-block;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+}
+
+.highlight {
+	color: #FF0683;
+}
+
+img {
+	height: 60vh;
+	width: auto;
+	display: inline-block;
+}
+
+/*Footer*/
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 20px;
+	width: 100vw;
+	background-color: #2A2A2A;
+	color: #C9C9C9;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border: none;
+}
+
+footer ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.footer {
+	position: absolute;
+	display: inline;
+	padding-left: 2%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+/*Responsive Desktop*/
+/*Tablet*/
+@media screen and (max-width: 1025px) {
+	#navigation {
+		font-size: 12px;
+	}
+	
+	#title {
+		font-size: 22px;
+	}
+	
+	.copy_column{
+		font-size: 12px;
+	}
+	
+	.footer {
+		font-size: 12px;
+	}
+}
+
+/*Small Laptop*/
+@media screen and (max-width: 1200px) {
+	#navigation {
+		font-size: 14px;
+	}
+	
+	#title {
+		font-size: 25px;
+	}
+	
+	.copy_column{
+		font-size: 14px;
+	}
+	
+	.footer {
+		font-size: 14px;
+	}
+}
+
+/*Desktop*/
+@media screen and (max-width: 1900px) {
+	#navigation {
+		font-size: 16px;
+	}
+	
+	#title {
+		font-size: 36px;
+	}
+	
+	.copy_column{
+		font-size: 16px;
+	}
+	
+	.footer {
+		font-size: 16px;
+	}
+}
+
+/*Large Desktop*/
+@media screen and (min-width: 1901px) {
+	#navigation {
+		font-size: 22px;
+	}
+	
+	#title {
+		font-size: 72px;
+	}
+	
+	.copy_column{
+		font-size: 25px;
+	}
+	
+	.footer {
+		font-size: 20px;
+	}
+}
+
