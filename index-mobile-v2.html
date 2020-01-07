@@ -8,12 +8,19 @@
   		gtag('js', new Date());
 		gtag('config', 'UA-150358192-1');
 	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150358192-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+		gtag('config', 'UA-150358192-1');
+	</script>
 	<base href="wwww.kishoeland.com" target="_self">
 	<meta charset="UTF-8">
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
-	<link rel="stylesheet" href="episode-mobile-v1.css">
+	<link rel="stylesheet" href="index-mobile-v1.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	<meta property="og:url" content="www.kishoeland.com">
 	<meta property="og:title" content="kishoeland: home to 'A Luv Story'">
@@ -33,7 +40,7 @@
 	<link rel="icon" type="image/png" href="kishoe-96.jpg" sizes="96x96">
 	<link rel="icon" type="image/png" href="kishoe-192.jpg" sizes="192x192">
 	<link rel="icon" type="image/png" href="kishoe-16.jpg" sizes="16x16">
-	<meta name="theme-color" content="#000000">
+	<meta name="theme-color" content="#2A2A2A">
 	<script type = "text/javascript">
 		function checkForUpdate()
 			{
@@ -50,7 +57,7 @@
 		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 		let vh = window.innerHeight * 0.01;
 		// Then we set the value in the --vh custom property to the root of the document
-		document.documentElement.style.setProperty('--vh', '${vh}px');
+		document.documentElement.style.setProperty('--vh', '${vh}px');	
 	</script>
 	<title>kishoeland</title>
 </head>
@@ -66,29 +73,19 @@
 		</div>
 	</header>
 	<main>
-	  	<div class="illustration"><img src="episode1-5.jpg" alt="episode1-5" height = "100%" width = "100%"></div>
 		<div class="mobile-copy">
-				<p>Luv called Kishoe later that night. He wanted to make sure his friend was okay.</p>
-				<br>
-				<p>"Kishoe, I'm sorry if I hurt you. Your idea is important. I just wanted to help you make a good plan. I really want your idea to succeed," Luv told her.</p>
-				<br>
-				<p>"Thanks Luv," Kishoe said. She smiled - she had another idea! She knew what she really needed to bring her idea to life - or rather, <em>who</em>.</p>
-				<br>
-				<p>"I need Luv," Kishoe thought. Because with Luv, you can do anything (or so they say). Kishoe asked Luv to join her, and he eagerly agreed.</p>
-				<br>
-				<p>And so, from that day on, Kishoe and Luv teamed up to bring an end to adulthood.</p>
-				<br>
-				<div id="next"><a href="episode2-mobile-v1.html">continue</a></div>
+			<span id="title">kishoeland</span>
 				<br>
 				<br>
+				<p>home to the illustrated series, 'A Luv Story'</p>
 				<br>
-				<!--<div id="next"><a href="episode2_1-mobile-v1.html">continue</a></div>-->
-	  	</div>
+				<span id="next"><a href="luv-mobile-v2.html">begin story</a></span>
+		</div>
 	</main>
 	<footer>
 			<ul>
-				<li class="footer">&copy; kishoeland 2019</li>
+				<li class="footer"> &copy; kishoeland 2019</li>
 			</ul>
-	</footer>
+	</footer> 
 </body>
 </html>
